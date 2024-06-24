@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    font-family: "Cairo", sans-serif;
+}
+#header1{
+    display: flex;
+    height: 40px;
+    background: #f5f5f5;
+    align-items: center;
+}
+#left-cabeça{
+    display: flex;
+    padding-left: 375.5px;
+    align-items: center;
+    
+}
+#left-cabeça svg{
+
+    height: 14px;
+
+}
+#left-cabeça>p{
+
+    font-size: 21;
+}
+#right-cabeça{
+    display: flex;
+    padding-left: 300px;
+}
+#right-cabeça svg{
+height: 14px;
+vertical-align: middle;
+}
+.icons-tops{
+        margin: 0px 35px 0px 0px;
+}
+input[type="checkbox"] {
+    display: none;}
+.overlay {
+    display: none;
+    position:absolute;
+  }
+.modal {
+    position: relative;
+    display: flex;    
+    background-color: #222222;;
+    color: white;
+    width: 100px;
+    text-align: center;
+    padding: 5px 0;
+    top: 43px;
+    z-index: 9;
+    
+}
+li{
+    font-size: 14.5px;
+    list-style: none;
+    padding: 5px 10px;
+}
+input[type="checkbox"]:hover ~ .overlay {
+    display: block;
+    cursor: pointer;
+}
