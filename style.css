@@ -1,63 +1,101 @@
-*{
-    margin: 0;
-    font-family: "Cairo", sans-serif;
+* {
+  margin: 0;
+  font-family: "Cairo", sans-serif;
 }
-#header1{
-    display: flex;
-    height: 40px;
-    background: #f5f5f5;
-    align-items: center;
+#header1 {
+  display: flex;
+  height: 40px;
+  background: #f5f5f5;
+  align-items: center;
 }
-#left-cabeça{
-    display: flex;
-    padding-left: 375.5px;
-    align-items: center;
-    
+#left-cabeça {
+  display: flex;
+  padding-left: 375.5px;
+  align-items: center;
 }
-#left-cabeça svg{
-
-    height: 14px;
-
+#left-cabeça svg {
+  height: 14px;
 }
-#left-cabeça>p{
-
-    font-size: 21;
+#left-cabeça > p {
+  font-size: 21;
 }
-#right-cabeça{
-    display: flex;
-    padding-left: 300px;
+#right-cabeça {
+  display: flex;
+  padding-left: 300px;
 }
-#right-cabeça svg{
-height: 14px;
-vertical-align: middle;
+#right-cabeça svg {
+  height: 14px;
+  vertical-align: middle;
 }
-.icons-tops{
-        margin: 0px 35px 0px 0px;
+.icons-tops {
+  margin: 0px 35px 0px 0px;
 }
 input[type="checkbox"] {
-    display: none;}
-.overlay {
-    display: none;
-    position:absolute;
-  }
-.modal {
-    position: relative;
-    display: flex;    
-    background-color: #222222;;
-    color: white;
-    width: 100px;
-    text-align: center;
-    padding: 5px 0;
-    top: 43px;
-    z-index: 9;
-    
+  display: none;
 }
-li{
-    font-size: 14.5px;
-    list-style: none;
-    padding: 5px 10px;
+.overlay {
+  display: none;
+  position: relative;
+}
+.modal {
+  position: absolute;
+  display: flex;
+  background-color: #222222;
+  color: white;
+  width: 100px;
+  text-align: center;
+  padding: 5px 0;
+  top: 43px;
+  z-index: 9;
+}
+li {
+  font-size: 14.5px;
+  list-style: none;
+  padding: 5px 10px;
 }
 input[type="checkbox"]:hover ~ .overlay {
-    display: block;
-    cursor: pointer;
+  display: block;
+  cursor: pointer;
+}
+#main {
+  display: grid;
+  grid-template-columns: 1.3fr 1.3fr 1fr 1.3fr 1.3fr 1.3fr;
+  grid-template-rows: 80px 80px 431px 271px;
+}
+#main > div {
+  border: solid 1px;
+}
+#logo {
+  grid-column: 2;
+}
+#nav {
+  grid-column: 3/6;
+}
+#menu {
+  grid-column: 20;
+  grid-row: 2/4;
+}
+#busca {
+  grid-column: 3/6;
+  grid-column: 2;
+}
+#banner {
+  grid-column: 3/6;
+  grid-row: 3;
+}
+#pro1 {
+  grid-row: 4;
+  grid-column: 2;
+}
+#pro2 {
+  grid-row: 4;
+  grid-column: 3;
+}
+#pro3 {
+  grid-row: 4;
+  grid-column: 4;
+}
+#pro4 {
+  grid-row: 4;
+  grid-column: 5;
 }
