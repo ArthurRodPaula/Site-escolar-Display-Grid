@@ -2,6 +2,9 @@
   margin: 0;
   font-family: "Cairo", sans-serif;
 }
+svg{
+  height: 14px;
+}
 #header1 {
   display: flex;
   height: 40px;
@@ -100,6 +103,27 @@ input[type="checkbox"]:hover ~ .overlay {
   grid-column: 5;
 }
 #logo{
-  width: 100% ;
-  height: 100px;
+  width: 119PX ;
+  height: 50px;
+  padding: 15px;
+  padding-left: 0
 }  
+#nav
+{
+  display: flex;
+  align-items: center;
+}
+#nav>ul{
+  padding: 0;  
+  display: flex;
+  justify-content: space-between;
+
+}
+#nav li:hover{
+  color: #7fad39;
+}
+#bars{
+  height: 15px}
+  #pags{
+    display: flex;
+  }
